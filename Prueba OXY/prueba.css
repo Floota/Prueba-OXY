@@ -1,0 +1,212 @@
+
+body {
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    flex-grow: 1;
+    flex-direction: column;
+}
+#title {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: -2px;
+    padding-right: 10px;
+}
+.textInput {
+    display: inline-flex;
+}
+.header {
+    display:flex;
+    position: relative;
+    float:none;
+    
+    padding-left: 25vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    color: rgb(73, 0, 87);
+    font-weight: 900;
+    border-bottom: 3px lightgray solid;
+}
+.convertidor {
+    position: relative;
+    box-sizing: border-box;
+    color:white;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    margin-top: 30px;
+    border: 0px solid rgb(73, 0, 87);
+    border-radius: 1cm;
+    background-color: rgb(73, 0, 87);
+
+}
+#convText {
+    padding-top: 15px;
+    margin-left: 7%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+.output {
+    font-size: 15px;
+    float: right;
+    padding-top: 15px;
+    margin-right: 10%;
+    margin-bottom: -5px;
+    font-size: 18px;
+    font-weight: 900;
+}
+#saveButton {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(73, 0, 87);
+    margin-top: 2%;
+    margin-left: 7%;
+    border:0;
+}
+#saveButton:hover {
+    background-color: rgb(125, 11, 147);
+
+}
+.measurements {
+    font-size: 25px;
+    margin-right: 5%;
+    float: right;
+}
+#inverseButton {
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 0;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+#inverseButton:hover {
+    background-color: rgb(125, 11, 147);
+}
+#inverseButton:active {
+    background-color: rgb(184, 68, 207);
+}
+select {
+    gap: 10px;
+    color: lightgrey;
+    text-align: left;
+    width: 280px;
+    margin-left: 7%;
+    background-color: rgb(73, 0, 87);
+    border: none;
+    border-bottom: 2px lightgrey solid;
+}
+#selectorOption:hover{
+    background-color: rgb(125, 11, 147);
+}
+#selectorOption:active{
+    background-color: rgb(125, 11, 147);
+}
+#selectorOption option:hover{
+    background-color: rgb(184, 68, 207);
+}
+input {
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    color: white;
+    margin-left: 10%;
+    padding-right: 5%;
+    width: 200px;
+    text-align: right;
+    background-color: rgb(73, 0, 87);
+    border: none;
+    border-bottom: 2px lightgrey solid;
+}
+#inputField:hover {
+    background-color: rgb(125, 11, 147);
+     
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#munits {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 2%;
+    align-self: right;
+}
+.footerText{
+    padding: 20px;
+    color: white;
+    display:inline;
+}
+footer{
+    position: -webkit-sticky;
+    position:fixed;
+    text-align: center;
+    height: 3vw;
+    background-color: rgb(73, 0, 87);
+    align-content: center;
+    bottom:0;
+    width:100vw;
+}
+#savedText {
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    clear:both;
+    margin-left: 27%;
+}
+#wrapper {
+    clear:both;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+.gridItem {
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(164, 164, 164);
+    color: rgb(44, 44, 44);
+    padding: 12px;
+    height: 1.2rem;
+    border-radius: 5px;
+}
+.gridButton {
+    float:right;
+    background-color: transparent;
+    border: 0;
+    margin-top: -1px;
+    font-size: 15px;
+}
+.gridButton:hover {
+    background-color: lightgray;
+}
+@media only screen {
+    .convertidor {
+        width: 90%;
+        float: left;        
+        margin-left: 5%;
+    }
+    #wrapper {
+        width: 90%;
+        float: left;        
+        margin-left: 5%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .convertidor {
+        width: 50%;
+        float: left;        
+        margin-left: 25%;
+    }
+    #wrapper {
+        width: 50%;
+        float: left;        
+        margin-left: 25%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

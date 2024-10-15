@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="prueba.css">
+    </head>
+    <body>
+        <div class="header">
+            <p id="title">⇄ </p>
+            <p> unit converter</p>
+        </div>
+            <div class="convertidor">
+                <p id="convText">convert</p>
+                <div class="inputs">
+                    <select id="selectorOption">
+                    <option value="km2mile" selected>Km → Miles</option>
+                    <option value="mile2km">Miles → Km</option>
+                    <option value="feet2meter" >Feet → Meters</option>
+                    <option value="meter2feet" >Meters → Feet</option>
+                    <option value="cm2inch" >Centimeter → Inch</option>
+                    <option value="inch2cm" >Inch → Centimeter</option>
+                    </select>
+                    <button id="inverseButton">⇆</button>
+                    <div class="textInput">
+                        <input id="inputField" type="number" inputmode="numeric"></input>
+                        <a id="munits"> kilometers</a>          
+                    </div>                       
+                </div>   
+                <button id="saveButton"> ♡ </button>
+                <div class="output">
+                    <p id="outputP"> - </p>
+                </div>
+            </div>
+            <p id ="savedText"> saved</p>
+        <div id="wrapper">
+        </div>
+        <div>
+            <footer>
+                <a class="footerText" >Terms of service</a>
+                <a class="footerText" >Privacy policy</a>
+            </footer>
+        </div>
+        <script src="prueba.js"></script> 
+    </body>
+</html>
